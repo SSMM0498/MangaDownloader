@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 mkdir -p ~/bin
 cp download_manga ~/bin
