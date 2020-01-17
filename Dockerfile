@@ -1,7 +1,8 @@
+# FROM ubuntu
 FROM python:alpine3.7
-FROM ubuntu
 COPY . /mangadownloader
 WORKDIR /mangadownloader
+RUN export PATH=$PATH":$HOME/bin"
 # RUN pip install -r ./requirements.txt
 EXPOSE 5000
-CMD ./dm.sh
+VOLUME [ "/mangadownloader" ]
